@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { Navigate } from "react-router";
 
@@ -10,16 +10,14 @@ const Manager=()=> {
     
 
   }
-  useEffect(()=>{
-    logedIn()
-  })
+  
   
     if (logedIn === false) {
       return <Navigate to="/" />;
     }
     return (
       <>
-        <hi>admin page</hi>
+        <hi>Manager page</hi>
       </>
     );
   }
